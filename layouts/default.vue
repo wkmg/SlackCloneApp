@@ -1,6 +1,14 @@
 <template>
-  <div>
-    <nuxt />
+  <div class="app-layout">
+    <div class="sidebar">
+      <p>チャンネル一覧</p>
+      <p>#general</p>
+      <p>#randomA</p>
+      <p>#randomB</p>
+    </div>
+    <div class="main-content">
+      <nuxt />
+    </div>
   </div>
 </template>
 
@@ -24,32 +32,26 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+.app-layout {
+  display: flex;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+.sidebar {
+  width: 300px;
+  background-color: #4A4141;
+  height: 100vh;
+  padding: 20px;
 }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+.sidebar p {
+  color: #DDDDDD;
+  padding-top: 4px;
 }
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.main-content {
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 100vh;
 }
+
 </style>
